@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
+
 <body>
-    
+    <aside class="sidebar">
+        <h2>ESTOQUE</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Cadastro de Produtos</a>
+        <a href="#">Entrada de Produtos</a>
+        <a href="#">Baixa / Saída</a>
+        <a href="#">Relatórios</a>
+        <a href="#">Configurações</a>
+    </aside>
+
+
+    <main class="main">
+        <div class="header">Bem-vindo ao Sistema de Estoque</div>
+
+
+        <div class="card-container">
+            <div class="card" onclick="location.href='cadastro_produto.html'">
+                <h3>Cadastro de Produtos</h3>
+                <p>Adicionar, editar ou remover itens do estoque.</p>
+            </div>
+
+
+            <div class="card" onclick="location.href='entrada_produto.html'">
+                <h3>Entrada de Produtos</h3>
+                <p>Registrar a chegada de novos itens ao estoque.</p>
+            </div>
+
+
+            <div class="card" onclick="location.href='saida_produto.html'">
+                <h3>Saída / Baixa</h3>
+                <p>Realizar baixas por vendas, consumo interno ou perdas.</p>
+            </div>
+
+
+            <div class="card" onclick="location.href='relatorios.html'">
+                <h3>Relatórios</h3>
+                <p>Visualizar informações gerenciais e movimentações.</p>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
